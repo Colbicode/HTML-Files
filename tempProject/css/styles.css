@@ -1,0 +1,36 @@
+/*
+Author: Colby Jenks
+Date: 11/01/2022
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, main, footer, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for the container */
+#container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+body {
+    background-color: #ffe5dc;
+    font-family: sans-serif;
+}
+
+table {
+    border-color: #fd4d0c;
+    box-shadow: #792101;
+}
+
+td {
+    border-color: #a22c02;
+}
+
+tbody:nth-child(odd) {
+    background-color: #fe9772;
+}

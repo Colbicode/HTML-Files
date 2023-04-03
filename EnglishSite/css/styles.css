@@ -1,0 +1,202 @@
+/*
+Name: Colby Jenks
+Date: 10/03/2022
+File Name: styles.css
+*/
+
+/* Style Reset. Resets all to a default setting just in case one isn't used.*/
+body, header, nav, main, footer, h1, div, img, figure, figcaption, section, article, aside, audio, video, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* Style for body that specifies color. */
+body {
+    background-color: white;
+}
+
+/* Style to create a fluid image */
+img, video {
+	max-width: 100%;
+    width: 100%;
+}
+
+/* Style rule for box sizing applies to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Begin style rules for mobile viewport */
+
+/* Style rule for header */
+
+/* For a sticky header use --> position: -webkit-sticky;
+position: sticky; */
+
+header {
+    width: 100%;
+    height: 75px;
+    transition: all 1s;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 5;
+}
+
+image {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+figcaption {
+    color: black;
+    position: absolute;
+    width: 100%;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: white;
+    z-index: 2;
+}
+
+#bigHeading {
+    top: 150px;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 20px;
+}
+
+#detail {
+    font-size: 25px;
+    top: 300px;
+    padding: 10px;
+}
+
+
+header:hover {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+header:hover #title {
+    color: black;
+}
+
+#title {
+    font-size: 20px;
+    letter-spacing: 5px;
+    position: fixed;
+    top: 25px;
+    left: 30px;
+    transition: 1s;
+    color: white;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+nav {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    width: 300px;
+    z-index: 2;
+}
+
+.navigation {
+    position: fixed;
+    right: -500px;
+    width: 350px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    transition: .5s;
+    z-index: 3;
+}
+
+.navigation ul li {
+    color: white;
+    text-align: left;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-size: 1.5em;
+    padding: 20px 30px;
+    border-bottom: 1pt solid #252525;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.navigation ul li:hover {
+    color: black;
+    transition: all .2s ease-in;
+    background-color: white;
+    border-bottom: 2pt solid #252525;
+    padding: 30px 20px;
+}
+
+.hamburger, .bar {
+    position: fixed;
+}
+
+.hamburger {
+    display: block;
+    top: 40px;
+    float: right;
+    right: 25px;
+    width: 20px;
+    height: 30px;
+    transform: translateY(-50%);
+    border: 0;
+    background: 0 0;
+}
+
+.bar {
+    top: 2px;
+    background: white;
+    width: 100%;
+    height: 2.5px;
+    transition: all .3s ease-in;
+}
+
+header:hover .bar {
+    background: black;
+}
+
+#bar2 {
+    top: 10px;
+}
+
+#bar3 {
+    top: 18px;
+}
+
+.navigation.active {
+    right: 0;
+}
+
+.hamburger.open #bar1 {
+    background-color: white;
+    transform: rotate(45deg) translate(6px, 5px);
+}
+
+.hamburger.open #bar2 {
+    background-color: transparent;
+}
+
+.hamburger.open #bar3 {
+    background-color: white;
+    transform: rotate(-45deg) translate(6px, -5px);
+}
+
+button {
+    cursor: pointer;
+}
+
+.hamburger, .bar {
+    position: fixed;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--
+    Student Name: Colby Jenks
+    File Name: index.html
+    Date: 09/12/2022
+-->
+<html lang="en">
+<head>
+    <title>About Me | Colby Jenks</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="icon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+    <meta name="description" content="Here, you can learn all about me.">
+</head>
+
+<body>
+
+<!-- Skip to Content Link -->
+<a class="skip" href="#content">Skip to Content</a>
+
+<header id="ffc-logo">
+    <figure>
+        <a href="index.html"><img id="logo" src="images/BW Circle Logo.png" alt="Black and White CJ logo."></a>
+    </figure>
+    <figcaption id="name" class="desktop">Colby Jenks</figcaption>
+</header>
+
+<!--Tablet, Desktop Nav-->
+<nav class="tablet-desktop">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="passion.html">Updates</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!--Mobile Nav-->
+<nav class="mobile-nav">
+    <div id="menu-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="passion.html">Passion</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </div>
+    <a class="menu-icon" onclick="hamburger()">
+        <div>&#9776</div>
+    </a>
+</nav>
+
+<!--Hero Image-->
+<div id="hero" class="tablet-desktop">
+    <img src="images/logoBWCut.jpg" alt="Black and White CJ image.">
+</div>
+
+<!-- The main element's main purpose is to show what I want the viewers to see. -->
+<main id="content">
+    <div class="aboutgrid">
+        <section id="inspired" class="about">
+            <h1>I n s p i r e d</h1>
+
+            <img src="images/sunOverHill.jpg" alt="Sun setting over a hill">
+
+            <p>I grew up in many different rural areas, from towns barely over 200 people, to cities of more than 20,000. What has really stuck with me through all these years is the influence of the countryside: the part that retains its peace.</p>
+
+            <ul>
+                <li>Mountains</li>
+                <li>Adventure</li>
+                <li>Exploration</li>
+            </ul>
+        </section>
+
+        <section id="experienced" class="about">
+                
+            <h1>E x p e r i e n c e d</h1>
+
+            <img class=“equip” src="images/pencilWithJournals.jpg" alt="A pencil and two journals">
+
+            <p>Currently, I have a total of 0 years in the field, qualifying me for absolutely nothing. However, I have taken (am taking) a web development class which prepares me for what is to come. I could probably make you a website within the next five months. :)</p>
+
+            <ul>
+                <li>Talented</li>
+                <li>Skilled</li>
+                <li>Developed</li>
+            </ul>
+        </section>
+            
+        <section id="creative" class="about">
+
+            <h1>C r e a t i v e</h1>
+
+            <img class=“equip” src="images/trampolineSpring.jpg" alt="A trampoline spring">
+
+            <p>I believe my most shining characteristic is my creativity. I love to explore new concepts and seek further perspectives in many ways, especially with web design. I take knowledge from multiple places and make sure to give new ideas a try.</p>
+            <ul>
+                <li>Curious</li>
+                <li>Motivated</li>
+                <li>Revolutionary</li>
+            </ul>
+        </section>
+    </div>
+
+    <p>Do you like flowers? Me too! <span class="viewex" onclick="burpees()"> View this video </span>of flowers in the Wind River Range. (Totally not wasting space here)</p>
+
+    <video controls id="example">
+        <source id="vid-src" src="vid" type="video/mp4">
+        <track id="despsrc" src="des" kind="descriptions" srclang="en" label="English Descriptions">
+        <p>Your browser does not support the video element.</p>
+    </video>
+</main>
+
+<footer>
+    <div id="copyright">
+        <p>&copy; Copyright 2022. All rights reserved.</p>
+        <p><a href="mailto:colbyjenks5@gmail.com">colbyjenks5@gmail.com</a></p>
+    </div>
+
+    <div class="social">
+        <a href="https://www.facebook.com/" target="_blank"><img src="images/f_logo_RGB-White_58.png" alt="white Facebook logo"></a>
+        <a href="https://twitter.com/?lang=en" target="_blank"><img src="images/2021 Twitter logo - white.png" alt="white Twitter logo"></a>
+    </div>
+</footer>
+
+<script src="scripts/script.js"></script>
+
+</body>
+
+</html>

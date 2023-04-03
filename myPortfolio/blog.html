@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+    Student Name: Colby Jenks
+    File Name: index.html
+    Date: 09/12/2022
+-->
+<html lang="en">
+<head>
+    <title>Blog: Discussing Wonders | Colby Jenks</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="icon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+    <meta name="description" content="Here, we talk about and discuss matters related and/or unrelated to computer science. So basically anything that comes to mind.">
+</head>
+
+<body>
+
+<!-- Skip to Content Link -->
+<a class="skip" href="#content">Skip to Content</a>
+
+<header id="ffc-logo">
+    <figure>
+        <a href="index.html"><img id="logo" src="images/BW Circle Logo.png" alt="Black and White CJ logo."></a>
+    </figure>
+    <figcaption id="name" class="desktop">Colby Jenks</figcaption>
+</header>
+
+<!--Tablet, Desktop Nav-->
+<nav class="tablet-desktop">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="passion.html">Updates</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!--Mobile Nav-->
+<nav class="mobile-nav">
+    <div id="menu-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="passion.html">Updates</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </div>
+    <a class="menu-icon" onclick="hamburger()">
+        <div>&#9776</div>
+    </a>
+</nav>
+
+<!--Hero Image-->
+<figure id="hero" class="tablet-desktop">
+    <img src="images/journalcropped.jpg" alt="Black and White CJ image.">
+    <figcaption>Blog: Discussing Wonders<hr>&#8681;</figcaption>
+</figure>
+
+<!-- The main element's main purpose is to promote discussion and possible deep though based upon my works or other relevant matters. -->
+<main id="content">
+
+    <section id="todo">
+        <h1 class="mobile" style="text-decoration:underline;">Welcome to my Blog</h1>
+        <h1>What would you like to look at today?</h1>
+    </section>
+
+    <section class="bloggrid">
+        <figure class="card">
+            <a href="index.html"><img src="images/pennies.jpg">
+                <figcaption class="posttitle">Where's the Money?</figcaption>
+                <p>Many are considering where the money in our economy is going. <b id="rm">Read More...</b></p>
+            </a>
+        </figure>
+
+        <figure class="card">
+            <a href="index.html"><img src="images/WRrange.jpg">
+            <figcaption class="posttitle">Enjoying the Outdoors</figcaption>
+            <p>Sometimes, the outdoors are the only place to escape the monotony of life. I feel we need to get out more often.<b id="rm"> Read More...</b></p></a>
+        </figure>
+
+        <figure class="card">
+            <a href="index.html"><img src="images/yellowFlower.jpg">
+            <figcaption class="posttitle">Brighten Your Day</figcaption>   
+            <p>Sometimes, all you need to complete your day is a little bit of happiness. Here I explain ways to do so.<b id="rm"> Read More...</b></p></a>
+        </figure>
+
+        <figure class="card">
+            <a href="index.html"><img src="images/sunsetroad.jpg">
+            <figcaption class="posttitle">Small Town Living</figcaption>
+            <p>Have you ever wondered what it is like to live in a small town? Here's my perspective.<b id="rm"> Read More...</b></p></a>
+        </figure>
+    </section>
+
+
+    <section id="more">
+        <p>More to come in the future...</p>
+    </section>
+
+    <!--
+        <div id="construction">
+            <img src="images/cone.png" alt="Construction cone with exclamation point.">
+            <p>THIS PAGE IS CURRENTLY UNDER MAJOR CONSTRUCTION.</p>
+        </div>
+    -->
+</main>
+
+<footer>
+    <div id="copyright">
+        <p>&copy; Copyright 2022. All rights reserved.</p>
+        <p><a href="mailto:colbyjenks5@gmail.com">colbyjenks5@gmail.com</a></p>
+    </div>
+
+    <div class="social">
+        <a href="https://www.facebook.com/" target="_blank"><img src="images/f_logo_RGB-White_58.png" alt="white Facebook logo"></a>
+        <a href="https://twitter.com/?lang=en" target="_blank"><img src="images/2021 Twitter logo - white.png" alt="white Twitter logo"></a>
+    </div>
+</footer>
+
+<script src="scripts/script.js"></script>
+
+</body>
+
+</html>

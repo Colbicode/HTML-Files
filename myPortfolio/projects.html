@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--
+    Student Name: Colby Jenks
+    File Name: index.html
+    Date: 09/12/2022
+-->
+<html lang="en">
+<head>
+    <title>Colby's Projects | Colby Jenks</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="icon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+    <meta name="description" content="My projects stretch the boundaries of computer science.">
+</head>
+
+<body>
+
+<!-- Skip to Content Link -->
+<a class="skip" href="#content">Skip to Content</a>
+
+<header id="ffc-logo">
+    <figure>
+        <a href="index.html"><img id="logo" src="images/BW Circle Logo.png" alt="Black and White CJ logo."></a>
+    </figure>
+    <figcaption id="name" class="desktop">Colby Jenks</figcaption>
+</header>
+
+<!--Tablet, Desktop Nav-->
+<nav class="tablet-desktop">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="passion.html">Updates</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!--Mobile Nav-->
+<nav class="mobile-nav">
+    <div id="menu-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="passion.html">Updates</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </div>
+    <a class="menu-icon" onclick="hamburger()">
+        <div>&#9776</div>
+    </a>
+</nav>
+
+<!--Hero Image-->
+<figure id="hero" class="tablet-desktop">
+    <img src="images/blurredScreenResizedCroppedEdited.jpg" alt="blurred computer screen">
+    <figcaption>Projects<hr>&#8681;</figcaption>
+</figure>
+
+<!-- The main element's main purpose is to show what I want the viewers to see. -->
+<main id="content">
+
+    <section id="todo">
+        <h1 class="mobile" style="text-decoration:underline;">Here are my projects</h1>
+        <h1>I am actually not working on any specific projects as I am still busy with High School/College homework.</h1>
+    </section>
+
+    <div id="music-sample">
+        <h3>However, You could listen to this annoying audio track though. Otherwise, just navigate to another page.</h3>
+        <audio controls>
+            <source src="media/20220115_152832_1.mp3" type="audio/mp3">
+            <p>Your browser does not support the format or structure of this audio element.</p>
+        </audio>
+        <hr>
+    </div>
+
+    <h3>If you're still here, you could also watch this 15 second video of the Wind River Range, but I would just navigate to another page.</h3>
+    <div id="flowervideo">
+        <video controls poster="images/flowerVSHumanityBW.jpg">
+            <source src="media/flowers.mp4" type="video/mp4">
+            <track src="media/captions.vtt" kind="captions" srclang="en" label="Captions">
+            <track src="media/descriptions.vtt" kind="descriptions" srclang="en" label="English Descriptions">
+            <p>Your browser does not support this video.</p>
+        </video>
+    </div>
+
+    <div>
+        <hr><h3>If you are still here, you must be bored and might as well Rick-Roll yourself.<br><a onclick="bored()" target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><b id="rm">Click here</b></a> and come back when you stop listening to "Never Gonna Give You Up" and actually give up.</h3>
+        
+        <h3 id="onlyif">Wow...<br>I officially commend you for your enduring negligence to navigate away from this purpose-stricken page.<br>Kudos to you - &#9994; &#9989;</h3>
+    </div>
+<!--
+    <div id="construction">
+        <img src="images/cone.png" alt="Construction cone with exclamation point.">
+        <p>THIS PAGE IS CURRENTLY UNDER MAJOR CONSTRUCTION.</p>
+    </div>
+-->
+
+
+</main>
+
+<footer>
+    <iframe src="https://www.desmos.com/calculator/oxxvtm5zrh?embed" width="500" height="500" style="border: 1px solid #ccc"></iframe>
+
+    <div id="copyright">
+        <p>&copy; Copyright 2022. All rights reserved.</p>
+        <p><a href="mailto:colbyjenks5@gmail.com">colbyjenks5@gmail.com</a></p>
+    </div>
+
+    <div class="social">
+        <a href="https://www.facebook.com/" target="_blank"><img src="images/f_logo_RGB-White_58.png" alt="white Facebook logo"></a>
+        <a href="https://twitter.com/?lang=en" target="_blank"><img src="images/2021 Twitter logo - white.png" alt="white Twitter logo"></a>
+    </div>
+</footer>
+
+<script src="scripts/script.js"></script>
+
+</body>
+
+</html>

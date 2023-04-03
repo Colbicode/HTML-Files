@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!--
+    Student Name: Colby Jenks
+    File Name: index.html
+    Date: 09/12/2022
+-->
+<html lang="en">
+<head>
+    <title>Contact Me | Colby Jenks</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="icon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+    <meta name="description" content="This is where you can get my contact information or set up a meeting.">
+</head>
+
+<body>
+
+<!-- Skip to Content Link -->
+<a class="skip" href="#content">Skip to Content</a>
+
+<header id="ffc-logo">
+    <figure>
+        <a href="index.html"><img id="logo" src="images/BW Circle Logo.png" alt="Black and White CJ logo."></a>
+    </figure>
+    <figcaption id="name" class="desktop">Colby Jenks</figcaption>
+</header>
+
+<!--Tablet, Desktop Nav-->
+<nav class="tablet-desktop">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="passion.html">Updates</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!--Mobile Nav-->
+<nav class="mobile-nav">
+    <div id="menu-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="passion.html">Updates</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </div>
+    <a class="menu-icon" onclick="hamburger()">
+        <div>&#9776</div>
+    </a>
+</nav>
+
+<!--Hero Image-->
+<figure id="hero" class="tablet-desktop">
+    <img src="images/pinkphonecrop.jpg" alt="Phone in pink case on table">
+    <figcaption>Contact Information<hr>&#8681;</figcaption>
+</figure>
+
+<!-- The main element's main purpose is to show what I want the viewers to see. -->
+
+<main id="content">
+    <div class="contactgrid">
+        <section>
+            <h1>How to contact me...</h1><hr>
+
+            <h2>Email me at <a href="mailto:colbyjenks5@gmail.com" class="intextlink">colbyjenks5@gmail.com</a></h2>
+
+            <h3>Or &#8628;</h3>
+
+            <h2>Contact me at <a class="intextlink" href="tel:1111111111">1-111-111-1111</a>.</h2>
+            
+            <h3>Or &#8628;</h3>
+
+            <h2 class="mobile">Take a visit to the place below.</h2>
+            <h2 class="tablet-desktop">Take a visit to the place on the right &rbarr;</h2>
+        </section>
+
+        <figure class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11746.74941227578!2d-110.62434649999999!3d42.60437645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87565c7169d5e7ab%3A0x38be0ecda4cc664c!2sWyoming%20Peak!5e0!3m2!1sen!2sus!4v1663689091735!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </figure>
+    </div>
+
+<!-- 
+    <div class="mobile">
+        <h3>Group Fitness Classes</h3>
+        <p>Boot Camp: TR 5am &amp; 5pm</p>
+        <p>Cardio: MWF 6am &amp; 6pm</p>
+        <p>Kickboxing: MWF 8am &amp; 7:15pm</p>
+        <p>Spinning: TR 6am &amp; 6pm</p>
+        <p>Yoga: TR 6am &amp; 6pm</p>
+        <p>Zumba: MWF 7am &amp; 6pm</p>
+    </div>
+    */
+-->
+
+    <div class="tablet-desktop">
+        <table><!--Start Table-->
+            <caption>Times of Availability</caption>
+            <tr><!--Row 1-->
+                <th>Day</th>
+                <th>Times</th>
+                <th>Mood</th>
+                <th>Location</th>
+            </tr>
+            <tr><!--Row 2-->
+                <td>Sunday</td>
+                <td>Not Available</td>
+                <td>Tired</td>
+                <td>Home Sweet Home</td>
+            </tr>
+            <tr><!--Row 3-->
+                <td>Monday</td>
+                <td>8:00am - 4:00pm</td>
+                <td>Happy</td>
+                <td>Neverland</td>
+            </tr>
+            <tr><!--Row 4-->
+                <td>Tuesday</td>
+                <td>8:00am - 4:00pm</td>
+                <td>Happy</td>
+                <td>The Shire</td>
+            </tr>
+            <tr><!--Row 5-->
+                <td>Wednesday</td>
+                <td>8:00am - 4:00pm</td>
+                <td>Mid</td>
+                <td>Hogwarts</td>
+            </tr>
+            <tr><!--Row 6-->
+                <td>Thursday</td>
+                <td>8:00am - 4:00pm</td>
+                <td>Ready for Friday</td>
+                <td>Fablehaven Sanctuary</td>
+            </tr>
+            <tr><!--Row 7-->
+                <td>Friday</td>
+                <td>8:00am - 12:00pm</td>
+                <td>Happy</td>
+                <td>Camp Halfblood</td>
+            </tr>
+            <tr><!--Row 8-->
+                <td>Saturday</td>
+                <td>Not Available</td>
+                <td>Ecstatic</td>
+                <td>Home Sweet Home</td>
+            </tr>
+        </table><!--End Table-->
+    </div>
+
+    <div id="form">
+        <h2>Complete the form below to schedule a meeting with me.</h2>
+
+        <form class="form-grid"><!--Start Form-->
+            <fieldset>
+                <legend>General Info</legend>
+                <label for="fName">First Name:</label>
+                <input type="text" name="fName" id="fName" required>
+
+                <label for="lName">Last Name:</label>
+                <input type="text" name="lName" id="lName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="Phone:">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Type of Website</legend>
+                <p>I would like a website that shows:</p>
+
+                <label for="grpfit"><input type="checkbox" name="interest" id="grpfit" value="Group Fitness">Dominance</label>
+
+                <label for="prtrain"><input type="checkbox" name="interest" id="prtrain" value="Personal Training">Prominance</label>
+
+                <label for="nutr"><input type="checkbox" name="interest" id="nutr" value="Nutrition">Confidence</label>
+
+                <label for="nutr"><input type="checkbox" name="interest" id="nutr" value="Nutrition">Reliability</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Referral Source</legend>
+                <label for="reference">How did you find me?</label>
+                <select name="reference" id="reference">
+                    <option value="ad">Delivery Bird</option>
+                    <option value="friend">Bob the Builder</option>
+                    <option value="google">A Cow</option>
+                    <option value="social">"Googled it!"</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="questions">Specific questions?</label>
+                <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+            </fieldset>
+
+            <input type="submit" id="submit" value="Submit" class="btn">
+        </form>
+    </div>
+
+    <!--
+        <div id="construction">
+            <img src="images/cone.png" alt="Construction cone with exclamation point.">
+            <p>THIS PAGE IS CURRENTLY UNDER MAJOR CONSTRUCTION.</p>
+        </div>
+    -->
+</main>
+
+<footer>
+    <div id="copyright">
+        <p>&copy; Copyright 2022. All rights reserved.</p>
+        <p><a href="mailto:colbyjenks5@gmail.com">colbyjenks5@gmail.com</a></p>
+    </div>
+
+    <div class="social">
+        <a href="https://www.facebook.com/" target="_blank"><img src="images/f_logo_RGB-White_58.png" alt="white Facebook logo"></a>
+        <a href="https://twitter.com/?lang=en" target="_blank"><img src="images/2021 Twitter logo - white.png" alt="white Twitter logo"></a>
+    </div>
+</footer>
+
+<script src="scripts/script.js"></script>
+
+</body>
+
+</html>
