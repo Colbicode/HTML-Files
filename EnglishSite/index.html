@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="icon/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
@@ -21,33 +21,57 @@
     <meta name="description" content="This home page is AWESOME!!!!!!">
 </head>
 
-<body>
+<body class="parent">
     <header>
-        <p id="title">AI + Humanity</p>
+        <p id="title"><a title="AI + Humanity" href="index.html">AI + Humanity</a></p>
 
         <div class="navigation">
-            <button title="hamburgerButton" type="button" class="hamburger" onclick="show()">
+            <button title="Menu" type="button" class="hamburger" onclick="show()">
                 <div id="bar1" class="bar"></div>
                 <div id="bar2" class="bar"></div>
                 <div id="bar3" class="bar"></div>
             </button>
             <nav>
                 <ul>
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Blog</a></li>
-                    <li><a>Contact</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <image id="background" alt="Robot Takeover" src="images/DALL·E 2023-03-27 22.32.13 - A sky view of a Mass Robot takeover in a destroyed New York with a Red Sun and photorealistic graphics..png"></image>
-    <figcaption id="bigHeading">A Complex Relationship</figcaption>
-    <figcaption id="detail"><center>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</center></figcaption>
+    <image id="background" alt="Robot Takeover" src="images/DALLETakeover.png"></image>
 
-    
 
+    <div class="flex-container">
+        <p id="bigHeading"><a>AI and Humanity:</a><br>A Complex Relationship</p>
+
+        <a href="index.html" class="mobile"><figcaption id="learn-more">Learn More</figcaption></a>
+        <p id="detail">Over the past few years, <b>artificial intelligence (AI)</b> has caused a tidal wave of interest in the world of technology. Different models and types have surfaced, from Apple's voice assistant Siri to DeepMind's AlphaGoZero to OpenAI's GPT-4. Slowly, the world is becoming automated by AI programs capable of learning, analyzing, and implementing data in ways humans could not fathom. AI not only applies a new sense of simplicity and convenience to human lives, but it is also completing complex tasks humans are not physically capable of. It is opening up the planet to a new era of development where programs and “robots” could become as intelligent or more intelligent than human beings. The idea that machines could become more intelligent than humans can be frightening, and the media has pictured and developed visual representations based on these fears. We must prepare for a future where AI becomes the leading figure in technological advancement. Even though its progress and capabilities may be frightening and portrayed negatively, the development of AI is essential to sustaining a safe future and creating an efficient, automated world where progress is catalyzed by technology.</p>
+
+        <div class="second">
+            <div class="leftSection">
+                <div id="sectionImage"></div>
+                <div class="sectionText">
+                    <h1>Managing the Complexity</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <div class="rightSection">
+                <div id="sectionImage"></div>
+                <div class="sectionText">
+                    <h1>Managing the Complexity</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Built By Colby Orvin Jenks</p>
+    </footer>
 
     <script src="scripts/script.js"></script>
 

@@ -14,16 +14,6 @@ function hamburger() {
 function show() {
     const nav = document.querySelector(".navigation")
     const ham = document.querySelector(".hamburger")
-    
-    if (!nav.classList.contains('active')) {
-        document.addEventListener("click", function(event) {
-            if (event.target.closest("")) {
-                //////////////
-            }
-        });
-    } else {
-        document.removeEventListener("click", arguments.callee);
-    }
 
     ham.classList.toggle('open');
     nav.classList.toggle('active');
@@ -36,3 +26,12 @@ function invert() {
 function normal() {
     document.querySelector('header').classList.toggle("normal");
 }
+
+
+//Gets Scrolling: Could use later
+/*
+window.addEventListener("scroll", function(event) {
+    scroll_y = this.scrollY;
+    scroll_x = this.scrollX;
+});
+*/

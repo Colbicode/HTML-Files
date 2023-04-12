@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+    Student Name: Colby Jenks
+    File Name: index.html
+    Date: 09/12/2022
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Template Page | Colby Jenks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="icon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+    <meta name="description" content="This home page is AWESOME!!!!!!">
+</head>
+
+<body>
+    <header>
+        <p id="title"><a href="index.html">AI + Humanity</a></p>
+
+        <div class="navigation">
+            <button title="Menu" type="button" class="hamburger" onclick="show()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </button>
+            <nav>
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <image id="background" alt="Robot Takeover" src="images/DALLETakeover.png"></image>
+
+    <div class="flex-container about">
+        
+        <h1>The Essay:<br>AI and Humanity: A Complex Relationship</h1>
+        
+        <object
+            data="pdfs/Artificial Intelligence Essay.pdf"
+            type="application/pdf"
+            width="500"
+            height="678"
+            id = "about-PDF">
+            <iframe
+                src="pdfs/Artificial Intelligence Essay.pdf"
+                width="500"
+                height="678"
+                title="Essay"
+            >
+                <p>This browser does not support PDF!</p>
+            </iframe>
+        
+        </object>
+    </div>
+
+    <footer>
+        <p>Built By Colby Orvin Jenks</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>
