@@ -298,6 +298,7 @@ button {
     z-index: 2;
     transition: 1s;
     cursor: default;
+    box-shadow: 0px 0px 10px black;
 }
 
 #detail:hover {
@@ -314,7 +315,7 @@ button {
     margin-top: 100px;
     width: 100%;
     background: white;
-    height: 1000px;
+    height: max-content;
 }
 
 /* Sections of the second body */
@@ -323,12 +324,14 @@ button {
     flex-direction: row;
     margin: 50px;
     background: rgba(0, 0, 0, .1);
+    border-radius: 10px;
 }
 
 .rightSection {
     display: flex;
     flex-direction: row-reverse;
     margin: 50px;
+    border-radius: 10px;
 }
 
 /* Images in a section */
@@ -336,7 +339,14 @@ button {
     margin: 20px;
     width: 350px;
     height: 350px;
-    background: purple;
+    border-radius: 10px;
+    transition: 0.7s;
+
+}
+
+#sectionImage:hover {
+
+    box-shadow: 0px 0px 10px black;
 }
 
 /* Text Within a Section */
@@ -345,18 +355,14 @@ button {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
+    margin-right: 20px;
     justify-content: center;
     width: 60%;
 }
 
-.rightSection .sectionText {
-    margin-left: 0;
-    margin-right: 20px;
-}
-
-
 .sectionText h1 {
     font-size: 3vw;
+    letter-spacing: 5px;
 }
 
 .sectionText p {
@@ -365,19 +371,109 @@ button {
 
 /* Footer */
 footer {
-    display: flex;
+    display: block;
     height: 100px;
-    background: black;
+    background: #664B86;
     width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
+    color: white;
 }
 
 footer p {
-    text-align: center;
     color: white;
+}
+
+#footerContent {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.fa {
+    color: white;
+}
+
+#citationButton {
+    position: relative;
+    float: right;
+    width: 81px;
+    right: 10px;
+    top: 10px;
+}
+
+#citationButton p {
+    display:inline-block;
+    color: white;
+    letter-spacing: 2px;
+}
+
+#arrow {
+    display: inline-block;
+    position: absolute;
+    align-items: center;
+    width: 16px;
+    height: 20px;
+    top: 9px;
+}
+
+.branch {
+    background: white;
+    height: 2px;
+    width: 10px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    transition: all 0.5s ease-in;
+}
+
+.branch.open {
+    transform: rotate(90deg);
+}
+
+#leftBranch {
+    left: 0px;
+    transform: rotate(45deg);
+}
+
+#leftBranch.open {
+    transform: rotate(135deg);
+}
+
+#rightBranch {
+    right: 0px;
+    transform: rotate(-45deg);
+}
+
+#rightBranch.open {
+    transform: rotate(-135deg);
+}
+
+/* Citations after the footer */
+#citations {
+    display: block;
+    text-align: left;
+    width: 100%;
+    background: #664B86;
+    height: 0px;
+    transition: 1s;
+    border-top: 0px solid transparent;
+}
+
+#citations p {
+    margin-left: 10px;
+    margin-top: 10px;
+    transition: 1s;
+    color: transparent;
+    font-size: 0%;
+}
+
+#citations.active {
+    height: 100px;
+    bottom: 0;
+    border-top: 5px solid white;
+}
+
+#citations.active p {
+    color: white;
+    font-size: 100%;
 }
 
 /** Styles for About Page: about.html **/
@@ -420,6 +516,11 @@ footer p {
         text-align: center;
         font-size: 50px;
         letter-spacing: 20px;
+    }
+
+    #bigHeading a {
+        color: white;
+        text-shadow: 2px 1px 4px black;
     }
     
     header:hover {

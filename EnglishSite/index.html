@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="icon/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
@@ -42,36 +43,61 @@
         </div>
     </header>
 
-    <image id="background" alt="Robot Takeover" src="images/DALLETakeover.png"></image>
+    <image id="background" alt="Futuristic Exotic Landscape" src="images/futuristicExoticLandscape.jpg"></image>
 
 
     <div class="flex-container">
         <p id="bigHeading"><a>AI and Humanity:</a><br>A Complex Relationship</p>
 
-        <a href="index.html" class="mobile"><figcaption id="learn-more">Learn More</figcaption></a>
-        <p id="detail">Over the past few years, <b>artificial intelligence (AI)</b> has caused a tidal wave of interest in the world of technology. Different models and types have surfaced, from Apple's voice assistant Siri to DeepMind's AlphaGoZero to OpenAI's GPT-4. Slowly, the world is becoming automated by AI programs capable of learning, analyzing, and implementing data in ways humans could not fathom. AI not only applies a new sense of simplicity and convenience to human lives, but it is also completing complex tasks humans are not physically capable of. It is opening up the planet to a new era of development where programs and “robots” could become as intelligent or more intelligent than human beings. The idea that machines could become more intelligent than humans can be frightening, and the media has pictured and developed visual representations based on these fears. We must prepare for a future where AI becomes the leading figure in technological advancement. Even though its progress and capabilities may be frightening and portrayed negatively, the development of AI is essential to sustaining a safe future and creating an efficient, automated world where progress is catalyzed by technology.</p>
+        <p id="detail">Over the past few years, <a href="#citations" onclick="goToCitations()"><b>artificial intelligence (AI)</b></a> has caused a tidal wave of interest in the world of technology. Different models and types have surfaced, from Apple's voice assistant Siri to DeepMind's AlphaGoZero to OpenAI's GPT-4. Slowly, the world is becoming automated by AI programs capable of learning, analyzing, and implementing data in ways humans could not fathom. AI not only applies a new sense of simplicity and convenience to human lives, but it is also completing complex tasks humans are not physically capable of. It is opening up the planet to a new era of development where programs and “robots” could become as intelligent or more intelligent than human beings. The idea that machines could become more intelligent than humans can be frightening, and the media has pictured and developed visual representations based on these fears. We must prepare for a future where AI becomes the leading figure in technological advancement. Even though its progress and capabilities may be frightening and portrayed negatively, the development of AI is essential to sustaining a safe future and creating an efficient, automated world where progress is catalyzed by technology.</p>
 
         <div class="second">
             <div class="leftSection">
-                <div id="sectionImage"></div>
+                <image id="sectionImage" alt="Green Binary Code" src="images/redBinaryCode.jpg">
                 <div class="sectionText">
                     <h1>Managing the Complexity</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>It is difficult for one to comprehend the vast possibilities of AI in order to truly manage the complexities held within. However, AI companies, ethicists, and lawmakers are beginning to enforce and create "laws" or guidelines to control the use and uptake of developing machine intelligence.</p>
                 </div>
             </div>
             <div class="rightSection">
-                <div id="sectionImage"></div>
+                <image id="sectionImage" alt="Green Binary Code" src="images/handUnderGlobe.jpg">
                 <div class="sectionText">
-                    <h1>Managing the Complexity</h1>
+                    <h1>The Benefits</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
+            <div class="leftSection">
+                <image id="sectionImage" alt="Green Binary Code" src="images/robotInAChildsHands.jpg">
+                <div class="sectionText">
+                    <h1>What you can do</h1>
+                    <p>It is difficult for one to comprehend the vast possibilities of AI in order to truly manage the complexities held within. However, AI companies, ethicists, and lawmakers are beginning to enforce and create "laws" or guidelines to control the use and uptake of developing machine intelligence.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div id="footerContent">
+                <p>Built By Colby O. Jenks</p>
+                <!--Social Media Icons-->
+                <a title="Facebook" href="#" class="fa fa-instagram"></a>
+                <a title="Google" href="#" class="fa fa-google"></a>
+            </div>
+
+            <a onclick="showCitations()"><div id="citationButton">
+                <p>Citations </p>
+                <div id="arrow">
+                    <div class="branch" id="leftBranch"></div>
+                    <div class="branch" id="rightBranch"></div>
+                </div>
+            </div></a>
+
+
+        </footer>
+
+        <div id="citations">
+            <p>Images generated using Bing Image Creator. No attributions necessary.</p>
         </div>
     </div>
-
-    <footer>
-        <p>Built By Colby Orvin Jenks</p>
-    </footer>
 
     <script src="scripts/script.js"></script>
 

@@ -19,6 +19,25 @@ function show() {
     nav.classList.toggle('active');
 }
 
+function showCitations() {
+    const rightBranch = document.querySelector("#rightBranch");
+    const leftBranch = document.querySelector("#leftBranch");
+    const citations = document.querySelector("#citations");
+    //const ham = document.querySelector(".hamburger")
+
+    //ham.classList.toggle('open');
+    rightBranch.classList.toggle('open');
+    leftBranch.classList.toggle('open');
+    citations.classList.toggle('active');
+}
+
+function goToCitations() {
+    const citations = document.querySelector("#citations");
+    if (!citations.classList.contains('active')) {
+        showCitations();
+    }
+}
+
 function invert() {
     document.querySelector('header').classList.toggle("inverted");
 }
