@@ -5,21 +5,22 @@
     Date: 09/12/2022
 -->
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Template Page | Colby Jenks</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="icon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
-    <link rel="manifest" href="icon/site.webmanifest">
-    <meta name="description" content="This home page is AWESOME!!!!!!">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>Template Page | Colby Jenks</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/x-icon" href="icon/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+        <link rel="manifest" href="icon/site.webmanifest">
+        <meta name="description" content="This home page is AWESOME!!!!!!">
+    </head>
 
 <body>
     <header>
@@ -33,8 +34,8 @@
             </button>
             <nav>
                 <ul>
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">The Papers</a></li>
                     <li><a>Blog</a></li>
                     <li><a>Contact</a></li>
                 </ul>
@@ -44,29 +45,84 @@
 
     <image id="background" alt="Robot Takeover" src="images/futuristicExoticLandscape2.jpg"></image>
 
-    <div class="flex-container about">
-        
-        <h1>The Essay:<br>AI and Humanity: A Complex Relationship</h1>
-        
-        <object
-            data="pdfs/Artificial Intelligence Essay.pdf"
-            type="application/pdf"
-            width="500"
-            height="678"
-            id = "about-PDF">
-            <iframe
-                src="pdfs/Artificial Intelligence Essay.pdf"
+    <div class="about flex-container">
+        <p id="bigHeading"><a>AI and Humanity:</a><br>Essay and Rationale Papers</p>
+
+        <div id="pdfs">
+            <object
+                data="pdfs/Artificial Intelligence Essay.pdf"
+                type="application/pdf"
                 width="500"
                 height="678"
-                title="Essay"
-            >
-                <p>This browser does not support PDF!</p>
-            </iframe>
-        
-        </object>
+                class="about-PDF"
+                id="leftPDF">
+                <iframe
+                    src="pdfs/Artificial Intelligence Essay.pdf"
+                    width="500"
+                    height="678"
+                    title="Essay"
+                >
+                    <p>This browser does not support PDF!</p>
+                </iframe>
+            </object>
+
+            <object
+                data="pdfs/Rationale Paper.pdf"
+                type="application/pdf"
+                width="500"
+                height="678"
+                class="about-PDF"
+                id = "rightPDF">
+                <iframe
+                    src="pdfs/Rationale Paper.pdf"
+                    width="500"
+                    height="678"
+                    title="Essay"
+                >
+                    <p>This browser does not support PDF!</p>
+                </iframe>
+            </object>
+        </div>
+
+        <div class="second">
+            <div class="leftSection">
+                <image id="sectionImage" alt="Green Binary Code" src="images/pencilOnPaper.jpg">
+                <div class="sectionText">
+                    <h1>The Essay</h1>
+                    <p>The Essay was a major English assigment inspired by my love for programming and my desire to someday become a computer engineer. The essay argues that AI will be a benefit for the overall wellfare of humanity, not a detriment. Since the essay was required to argue a point, some bias may be present and reasoning may be circular, but the information found within was analyzed and rewritten to uphold the truth.</p>
+                </div>
+            </div>
+            <div class="rightSection">
+                <image id="sectionImage" alt="Green Binary Code" src="images/questionMark.jpg">
+                <div class="sectionText">
+                    <h1>The Rationale</h1>
+                    <p>The Rationale paper was written specifically to reason and guide my purpose in making this website. In it, you'll find my purpose and intended audience along with some worded layout plans.</p>
+                </div>
+            </div>
+        </div>
+
         <footer>
-            <p>Built By Colby Orvin Jenks</p>
+            <div id="footerContent">
+                <p>Built By Colby O. Jenks</p>
+                <!--Social Media Icons-->
+                <a title="Facebook" href="#" class="fa fa-instagram"></a>
+                <a title="Google" href="#" class="fa fa-google"></a>
+            </div>
+
+            <a onclick="showCitations()"><div id="citationButton">
+                <p>Citations </p>
+                <div id="arrow">
+                    <div class="branch" id="leftBranch"></div>
+                    <div class="branch" id="rightBranch"></div>
+                </div>
+            </div></a>
+
+
         </footer>
+
+        <div id="citations">
+            <p>All images were generated using Bing Image Creator. No attributions necessary.</p>
+        </div> 
     </div>
 
 
