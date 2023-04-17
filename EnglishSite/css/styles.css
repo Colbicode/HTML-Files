@@ -1,6 +1,5 @@
 /*
 Name: Colby Jenks
-Date: 10/03/2022
 File Name: styles.css
 */
 
@@ -821,8 +820,6 @@ footer p {
         position: fixed;
     }
 }
-
-
 
 /*Media Query for Print */
 @media print {
